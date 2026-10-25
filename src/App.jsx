@@ -85,7 +85,7 @@ function App() {
                   <>
                     <button
                       type="button"
-                      className="nav-link"
+                      className={`nav-link ${isOpen ? 'link-open' : ''}`}
                       onClick={(event) => {
                         event.stopPropagation();
                         handleDropdownToggle(item.key);
@@ -97,7 +97,7 @@ function App() {
                       </span>
                     </button>
 
-                    <ul className={`dropdown-list ${isOpen ? 'show' : ''}`}>
+                    <ul className={`dropdown-list ${isOpen ? 'show visible' : ''}`}>
                       {item.items.map((entry, index) => (
                         <li key={`${item.key}-${entry.label}`} className="dropdown-link">
                           <a
@@ -154,7 +154,7 @@ function App() {
         </button>
       </header>
 
-      <div className={`overlay ${menuOpen ? 'show' : ''}`} onClick={() => setMenuOpen(false)} />
+      <div className={`overlay ${menuOpen ? 'show visible' : ''}`} onClick={() => setMenuOpen(false)} />
 
       <main className="hero">
         <div className="text-content">

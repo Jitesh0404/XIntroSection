@@ -296,7 +296,8 @@ button {
   z-index: 20;
 }
 
-.overlay.show {
+.overlay.show,
+.overlay.visible {
   opacity: 1;
   pointer-events: auto;
 }
@@ -352,7 +353,7 @@ button {
     height: 100vh;
     background: #fff;
     box-shadow: -10px 0 24px rgba(0, 0, 0, 0.08);
-    z-index: 25;
+    z-index: 10;
     padding: 72px 22px 26px;
     margin: 0;
     flex-direction: column;
@@ -417,6 +418,10 @@ button {
 
   .close-menu.hidden {
     display: none;
+  }
+
+  .nav-link.link-open {
+    color: #171717;
   }
 
   .hero {
