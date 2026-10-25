@@ -137,7 +137,7 @@ function App() {
 
         <button
           type="button"
-          className={`open-menu ${menuOpen ? '' : 'visible'}`}
+          className={`open-menu ${menuOpen ? 'hidden' : 'visible'}`}
           aria-label="Open menu"
           onClick={() => setMenuOpen(true)}
         >
@@ -146,7 +146,7 @@ function App() {
 
         <button
           type="button"
-          className={`close-menu ${menuOpen ? 'visible' : ''}`}
+          className={`close-menu ${menuOpen ? 'visible' : 'hidden'}`}
           aria-label="Close menu"
           onClick={() => setMenuOpen(false)}
         >

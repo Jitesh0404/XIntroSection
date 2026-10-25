@@ -315,11 +315,6 @@ button {
   z-index: 30;
 }
 
-.open-menu.visible,
-.close-menu.visible {
-  display: flex;
-}
-
 .open-menu img,
 .close-menu img {
   width: 36px;
@@ -408,12 +403,20 @@ button {
     display: flex;
   }
 
+  .open-menu.hidden {
+    display: none;
+  }
+
   .close-menu {
     display: none;
   }
 
   .close-menu.visible {
     display: flex;
+  }
+
+  .close-menu.hidden {
+    display: none;
   }
 
   .hero {
